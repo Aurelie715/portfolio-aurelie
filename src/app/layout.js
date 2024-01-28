@@ -10,10 +10,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={openSans.className}>
       <body>
-          <div className="grid-global">
-            <Header />
-            {children}
-          </div>
+        <Header />
+        <section className="page-container">
+          {children}
+        </section>
       </body>
     </html>
   );

@@ -1,10 +1,9 @@
 import React from "react";
 
-export default function Svg() {
+export default function Svg({ style }) {
   return (
     <svg
       width="100%"
-      height="100%"
       viewBox="0 0 235694 295101"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -17,6 +16,7 @@ export default function Svg() {
         strokeLinecap: "round",
         strokeLinejoin: "round",
         strokeMiterlimit: "1.5",
+        ...style,
       }}
     >
       <path

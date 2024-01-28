@@ -1,19 +1,20 @@
-"use client"
+"use client";
 import styles from "./home.module.scss";
 import IllustrationAB from "../components/Svg";
 
 export default function Home() {
   return (
-    <div className="grid-area-content">
-      <div className={styles["home-grid"]}>
-        <div className={styles.image}>
-          <IllustrationAB />
-        </div>
-        <div className={styles.name}>
-          <p>Aurélie</p>
-          <p>Bernard</p>
-        </div>
+    <>
+      <IllustrationAB style={{ marginTop: "-2rem" }} />
+
+      <div className={styles.presentation}>
+        <p className={styles.name}>
+          <span>Aurélie</span>
+          <span>Bernard</span>
+        </p>
+        <p>Développeuse intégratrice web</p>
+        <p>Créative, polyvalente et passionnée</p>
       </div>
-    </div>
+    </>
   );
 }

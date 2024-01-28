@@ -15,14 +15,16 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="grid-area-header">
-      <header className={isOpen ? styles["header-container"] : ""}>
-        <div className={styles.header}>
-          <p className={styles.name}>Aurélie BERNARD</p>
-          <MenuBtn isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
-        </div>
-        {isOpen ? <Menu onItemClick={() => setIsOpen(false)} /> : null}
-      </header>
-    </div>
+    <header
+      className={`${styles["header-container"]} ${
+        isOpen ? styles["open"] : ""
+      }`}
+    >
+      <div className={styles.header}>
+        <p className={styles.name}>Aurélie BERNARD</p>
+        <MenuBtn isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
+      </div>
+      {isOpen ? <Menu onItemClick={() => setIsOpen(false)} /> : null}
+    </header>
   );
 }
