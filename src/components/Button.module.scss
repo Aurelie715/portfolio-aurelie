@@ -1,0 +1,23 @@
+@import "../app/variables.module.scss";
+
+.link {
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+  font-size: 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 5px 0px 0px $secondary-color;
+  box-shadow: 0px 5px 0px 0px $secondary-color;
+  transition: transform 800ms ease-in-out;
+  &:hover {
+    transform: translateY(5px);
+    box-shadow: unset;
+  }
+  &:visited {
+    color: $secondary-color;
+  }
+  &:focus {
+    color: $secondary-color;
+  }
+}

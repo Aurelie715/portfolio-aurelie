@@ -1,0 +1,13 @@
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  .image {
+    grid-area: 1 / 1 / 13 / 13;
+    // padding-top: 4rem;
+  }
+  .name {
+    grid-area: 6 / 2 / 8 / 7;
+    background-color: lightblue;
+  }
+}

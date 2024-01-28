@@ -1,13 +1,13 @@
 "use client"
-import Image from "next/image";
-
+import styles from "./home.module.scss";
+import IllustrationAB from "../components/Svg";
 
 export default function Home() {
   return (
     <div className="grid-area-content">
       <div className={styles["home-grid"]}>
         <div className={styles.image}>
-          {/* <IllustrationAB /> */}
+          <IllustrationAB />
         </div>
         <div className={styles.name}>
           <p>Aurélie</p>
@@ -17,5 +17,3 @@ export default function Home() {
     </div>
   );
 }
-
-
