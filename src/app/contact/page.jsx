@@ -1,7 +1,14 @@
 import React from "react";
+import PageNavigation from "@/components/PageNavigation";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <>
+      <section className="page-container">contact</section>
+
+      <PageNavigation />
+    </>
+  );
 };
 
 export default Contact;

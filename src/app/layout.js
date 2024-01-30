@@ -11,9 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={openSans.className}>
       <body>
         <Header />
-        <section className="page-container">
-          {children}
-        </section>
+        {children}
       </body>
     </html>
   );
